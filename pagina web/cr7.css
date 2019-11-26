@@ -1,0 +1,45 @@
+/*Compras*/
+
+.section {
+    margin-top: 225px;
+    margin-bottom: 10.5%;
+}
+
+.imagen {
+    float: left;
+    margin-left: 33%;
+}
+
+.formulario {
+    margin-left: 60%;
+}
+
+.descripcion {
+    margin-bottom: 10px;
+}
+
+@media all and (max-width: 850px) {
+    .section {
+        display: block;
+    }
+    .formulario {
+        margin-left: 30%;
+    }
+    .imagen {
+        float: none;
+        margin-left: 30%;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .section {
+        display: block;
+    }
+    .formulario {
+        margin-left: 15%;
+    }
+    .imagen {
+        float: none;
+        margin-left: 15%;
+    }
+}

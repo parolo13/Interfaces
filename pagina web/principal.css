@@ -130,10 +130,17 @@
         padding-right: 15px;
     }
     
-    @media all and (max-width: 800px) {
-        .cabecera-barra .cabecera-barra-2 nav {
-            font-size: 14px;
-        }
+    .cabecera-barra .cabecera-barra-2 nav a:hover {
+        opacity: 1;
+        border-radius: 2px;
+        background-color: red;
+        padding: 8px 10px;
+    }
+    
+    .cabecera-barra .cabecera-barra-2 nav a.activo {
+        border-radius: 2px;
+        background-color: red;
+        padding: 8px 10px;
     }
     
     @media all and (max-width: 780px) {
@@ -189,7 +196,8 @@
         height: 100px;
         color: #4e5359;
         box-sizing: border-box;
-        bottom: 0%;
+        bottom: 0px;
+        width: 100%;
     }
     
     .footer {
@@ -198,6 +206,10 @@
         justify-content: space-between;
     }
     /*Contenido*/
+    
+    section div a:hover {
+        background-color: red;
+    }
     
     div>a {
         text-decoration: none;
