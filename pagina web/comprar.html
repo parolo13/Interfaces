@@ -41,7 +41,7 @@
                 <div class="cabecera-separador">
 
                     <nav>
-                        <h3><span class="busqueda">Busqueda</span></h3>
+                        <span class="busqueda">Busqueda</span>
                         <i class="fa fa-search"></i><input type="search" placeholder="Buscar carta..."><button>Buscar</button>
                         <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Inicio sesion</a>
                         <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Registrarse</a>
@@ -57,29 +57,27 @@
 
         <div id="id02" class="modal">
 
-            <form class="modal-content animate" action="principal.html">
+            <form title="Registro" class="modal-content animate" action="principal.html">
                 <div class="imagen">
                     <span onclick="document.getElementById('id02').style.display='none'" class="cerrar" title="Cerrar Modal">&times;</span>
                     <img src="logo.png" alt="Logo" class="logo">
                 </div>
 
                 <div class="contenedor">
-                    <label class="usuario"><b>Usuario</b></label>
+                    <label for="usuario" class="usuario"><b>Usuario</b></label>
                     <input type="text" placeholder="Poner usuario" name="usuario" required>
 
-                    <label id="contraseña"><b>Contraseña</b></label>
+                    <label for="contraseña" id="contraseña"><b>Contraseña</b></label>
                     <input type="password" placeholder="Poner contraseña" name="contraseña" required>
 
-                    <label class="Correo"><b>E-mail</b></label>
+                    <label for="correo" class="Correo"><b>E-mail</b></label>
                     <input type="email" placeholder="Poner E-mail" name="correo" required>
-                    <label class="Datos"><b>Datos de importancia</b></label>
+                    <label for="Datos" class="Datos"><b>Datos de importancia</b></label>
                     <br>
                     <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
                     <br>
 
                     <input type="submit" value="Registrarse">
-                    <label>
-                                  </label>
                 </div>
             </form>
         </div>
@@ -91,22 +89,21 @@
 
         <div id="id01" class="modal">
 
-            <form class="modal-content animate" action="principal.html">
+            <form title="login" class="modal-content animate" action="principal.html">
                 <div class="imagen">
                     <span onclick="document.getElementById('id01').style.display='none'" class="cerrar" title="Cerrar Modal">&times;</span>
                     <img src="logo.png" alt="Logo" class="logo">
                 </div>
 
                 <div class="contenedor">
-                    <label class="usuario"><b>Usuario</b></label>
+                    <label for="usuario" class="usuario"><b>Usuario</b></label>
                     <input type="text" placeholder="Poner usuario" name="usuario" required autocomplete="off">
 
-                    <label id="contraseña2"><b>Contraseña</b></label>
+                    <label for="contraseña" id="contraseña2"><b>Contraseña</b></label>
                     <input type="password" placeholder="Poner contraseña" name="contraseña" required>
 
                     <input type="submit" value="Iniciar sesion">
-                    <label>
-                      </label>
+
                 </div>
             </form>
 
@@ -116,9 +113,9 @@
     <section>
         <div class="grid-container">
             <div class="grid-item-1">Cartas Disponibles</div>
-            <div class="grid-item-4"><img src="marc.jpg" alt=""></div>
-            <div class="grid-item-5"><img src="tripier.jpg" alt=""></div>
-            <div class="grid-item-6"><img src="cr7.jpg" alt=""></div>
+            <div class="grid-item-4"><img src="marc.jpg" alt="Ter Stegen"></div>
+            <div class="grid-item-5"><img src="tripier.jpg" alt="tripier"></div>
+            <div class="grid-item-6"><img src="cr7.jpg" alt="cristiano Ronaldo"></div>
             <div class="grid-item-7"><a href="marc.html">Ter Stegen(2015-16) 3'00€</a></div>
             <div class="grid-item-8"><a href="trippier.html">Trippier(2019-20) 0'10€</a></div>
             <div class="grid-item-9"><a href="cr7.html">Ronaldo(2016-17) 5'00€</a> </div>
