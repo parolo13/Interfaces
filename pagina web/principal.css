@@ -127,14 +127,14 @@
         display: inline-block;
         color: #4e5359;
         text-decoration: none;
-        padding-right: 15px;
+        padding: 3px 10px;
+        transition: 0.25s;
     }
     
     .cabecera-barra .cabecera-barra-2 nav a:hover {
         opacity: 1;
         border-radius: 2px;
         background-color: red;
-        padding: 8px 10px;
     }
     
     .cabecera-barra .cabecera-barra-2 nav a.activo {
@@ -198,6 +198,8 @@
         box-sizing: border-box;
         bottom: 0px;
         width: 100%;
+        background: -prefix-linear-gradient(top, white, black);
+        background: linear-gradient(to bottom, white, black);
     }
     
     .footer {
@@ -209,6 +211,7 @@
     
     section div a:hover {
         background-color: red;
+        transform: rotate3d(1, 1, 1, 50deg);
     }
     
     div>a {

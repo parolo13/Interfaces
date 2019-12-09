@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="cartas.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="basic">
+        <header class="cabecera-barra">
+
+
+            <div class="cabecera-barra-1">
+
+
+                <div class="cabecera-separador">
+
+                    <h1><a href="#">Foot<span>Card</span></a></h1>
+
+                    <nav>
+                        <div class="nav">
+                            <a href="principal.html" translate="yes">Inicio</a>
+                            <a href="comprar.html" class="activo" translate="yes">Comprar Cartas</a>
+                            <a href="contacto.html">Contacto</a>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="cabecera-barra-2">
+
+                <div class="cabecera-separador">
+
+                    <nav>
+                        <h3><span class="busqueda">Busqueda</span></h3>
+                        <i class="fa fa-search"></i><input type="search" placeholder="Buscar carta..."><button>Buscar</button>
+                        <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Inicio sesion</a>
+                        <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Registrarse</a>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </header>
+    </div>
+    <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="principal.html">
+            <div class="imagen">
+                <span onclick="document.getElementById('id02').style.display='none'" class="cerrar" title="Cerrar Modal">&times;</span>
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+
+            <div class="contenedor">
+                <label class="usuario"><b>Usuario</b></label>
+                <input type="text" placeholder="Poner usuario" name="usuario" required>
+
+                <label id="contraseña"><b>Contraseña</b></label>
+                <input type="password" placeholder="Poner contraseña" name="contraseña" required>
+
+                <label class="Correo"><b>E-mail</b></label>
+                <input type="email" placeholder="Poner E-mail" name="correo" required>
+                <label class="Datos"><b>Datos de importancia</b></label>
+                <br>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <br>
+
+                <input type="submit" value="Registrarse">
+                <label>
+                                  </label>
+            </div>
+        </form>
+    </div>
+
+    <section>
+
+
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="principal.html">
+                <div class="imagen">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="cerrar" title="Cerrar Modal">&times;</span>
+                    <img src="logo.png" alt="Logo" class="logo">
+                </div>
+
+                <div class="contenedor">
+                    <label class="usuario"><b>Usuario</b></label>
+                    <input type="text" placeholder="Poner usuario" name="usuario" required autocomplete="off">
+
+                    <label id="contraseña2"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Poner contraseña" name="contraseña" required>
+
+                    <input type="submit" value="Iniciar sesion">
+                    <label>
+                      </label>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+    <section>
+        <div class="section">
+            <div class="cr7"><img src="cr7.jpg" alt=""></div>
+            <form class="formulario" action="cr7.html">
+                <div class="select">
+                    <h2>Precio</h2>
+                    <select name="dinero" id="dinero">
+                        <option value="1">0'10€</option>
+                        <option value="2">0'20€</option>
+                        <option value="3" autofocus>0'30€</option>
+                        <option value="4">0'40€</option>
+                        <option value="5">0'50€</option>
+                    </select>
+                </div>
+                <div class="descripcion">
+                    <h3>Descripcion</h3>
+                    Kieran Trippier temporada 2019-20
+                </div>
+                <input type="submit" value="Comprar">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div>©CopyRight 2019</div>
+            <div>Correo de contacto: FootCard@gmail.com</div>
+        </div>
+    </footer>
+</body>
+
+</html>
