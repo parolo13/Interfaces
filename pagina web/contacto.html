@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!--Aqui ponemos el video con el muted para que funcione correctamente-->
     <video src="video.mp4" autoplay loop muted>
         <source src="video.mp4" type="video">
     </video>
@@ -48,10 +49,11 @@
 
 
     <section>
-        <form tittle="contacto" class="modal-content animate" action="principal.html">
+        <form title="contacto" class="modal-content animate" action="principal.html">
 
             <div class="contenedor">
                 <label for="usuario" id="usuario1"><b>Usuario</b></label>
+                <!--autofocus para que nada mas salga en la página le salga en el usuario-->
                 <input id="usuario" type="text" placeholder="Poner usuario" name="usuario" required autofocus>
 
                 <label for="sexo" id="sexo1"><b> Sexo</b></label>

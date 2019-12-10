@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Aqui están los enlaces para el css-->
     <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,6 +15,7 @@
 
 <body>
     <div class="basic">
+        <!--El header-->
         <header class="cabecera-barra">
 
 
@@ -27,6 +29,7 @@
 
                     <nav>
                         <div class="nav">
+                            <!--Use translate para que se pueda trducir el Inicio y el comprar cartas-->
                             <a href="#" class="activo" translate="yes">Inicio</a>
                             <a href="comprar.html" translate="yes">Comprar Cartas</a>
                             <a href="contacto.html">Contacto</a>
@@ -39,10 +42,12 @@
             <div class="cabecera-barra-2">
 
                 <div class="cabecera-separador">
-
+                    <!--El navegador-->
                     <nav>
                         <h3><span class="busqueda">Busqueda</span></h3>
                         <i class="fa fa-search"></i><input type="search" placeholder="Buscar carta..."><button>Buscar</button>
+
+                        <!--Para llamar el modal-->
                         <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Inicio sesion</a>
                         <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Registrarse</a>
                     </nav>
@@ -54,9 +59,9 @@
         </header>
 
 
-
+        <!--Los modales-->
         <div id="id02" class="modal">
-
+            <!--Formulario con 4 input diferentes-->
             <form class="modal-content animate" action="principal.html">
                 <div class="imagen">
                     <span onclick="document.getElementById('id02').style.display='none'" class="cerrar" title="Cerrar Modal">&times;</span>
@@ -90,7 +95,7 @@
 
 
         <div id="id01" class="modal">
-
+            <!--Formularios con dos input-->
             <form class="modal-content animate" action="principal.html">
                 <div class="imagen">
                     <span onclick="document.getElementById('id01').style.display='none'" class="cerrar" title="Cerrar Modal">&times;</span>
@@ -114,6 +119,8 @@
 
     </section>
     <section>
+        <!--Usando los grid para el container-->
+
         <div class="grid-container">
             <div class="grid-item-1">Las mejores Cartas</div>
             <div class="grid-item-2">Cartas más baratas</div>
@@ -126,6 +133,7 @@
             <div class="grid-item-9"><a href="cr7.html">Ronaldo(2016-17) 5'00€</a> </div>
         </div>
     </section>
+    <!--El footer-->
     <footer>
         <div class="footer">
             <div>©CopyRight 2019</div>
