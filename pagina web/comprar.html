@@ -59,22 +59,26 @@
 
             <form title="Registro" class="modal-content animate" action="principal.html">
                 <div class="imagen">
+
                     <span onclick="document.getElementById('id02').style.display='none'" class="cerrar" title="Cerrar Modal">&times;</span>
-                    <img src="logo.png" alt="Logo" class="logo">
+                    <figure>
+                        <img src="logo.png" alt="Logo" class="logo">
+                        <figcaption>Logo</figcaption>
+                    </figure>
                 </div>
 
                 <div class="contenedor">
                     <label for="usuario" class="usuario"><b>Usuario</b></label>
-                    <input type="text" placeholder="Poner usuario" name="usuario" required>
+                    <input id="usuario" type="text" placeholder="Poner usuario" name="usuario" required>
 
-                    <label for="contraseña" id="contraseña"><b>Contraseña</b></label>
-                    <input type="password" placeholder="Poner contraseña" name="contraseña" required>
+                    <label for="password" id="contraseña"><b>Contraseña</b></label>
+                    <input id="password" type="password" placeholder="Poner contraseña" name="contraseña" required>
 
                     <label for="correo" class="Correo"><b>E-mail</b></label>
-                    <input type="email" placeholder="Poner E-mail" name="correo" required>
+                    <input id="correo" type="email" placeholder="Poner E-mail" name="correo" required>
                     <label for="Datos" class="Datos"><b>Datos de importancia</b></label>
                     <br>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                    <textarea name="textarea" id="Datos" cols="30" rows="10"></textarea>
                     <br>
 
                     <input type="submit" value="Registrarse">
@@ -99,8 +103,8 @@
                     <label for="usuario" class="usuario"><b>Usuario</b></label>
                     <input type="text" placeholder="Poner usuario" name="usuario" required autocomplete="off">
 
-                    <label for="contraseña" id="contraseña2"><b>Contraseña</b></label>
-                    <input type="password" placeholder="Poner contraseña" name="contraseña" required>
+                    <label for="password1" id="contraseña2"><b>Contraseña</b></label>
+                    <input id="password1" type="password" placeholder="Poner contraseña" name="contraseña" required>
 
                     <input type="submit" value="Iniciar sesion">
 
@@ -127,6 +131,10 @@
 
             <div>Correo de contacto: FootCard@gmail.com</div>
         </div>
+        <details>
+            <summary>Horarios apertura</summary>
+            <p><mark><time> 10:00</time></mark> </p>
+        </details>
     </footer>
 
 </body>
